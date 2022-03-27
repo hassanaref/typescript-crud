@@ -16,6 +16,6 @@ mongoose_1.default.connection
 });
 app.use(express_1.default.json());
 app.use(date_1.default);
-app.listen(process.env.PORT, () => {
+app.listen(process.env.PORT || 3000, () => {
     console.log('typescript server started');
 });
