@@ -15,6 +15,6 @@ mongoose.connection
 app.use(express.json());
 app.use(dates);
 
-app.listen(process.env.PORT, () => {
+app.listen(process.env.PORT || 3000, () => {
   console.log('typescript server started');
 });
